@@ -1,0 +1,253 @@
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0 0;
+  padding: 0;
+}
+body {
+  background-image: url("./img/bg-pattern-top-desktop.svg"),
+    url("./img/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat no-repeat;
+  background-position: left top, right bottom;
+  font-size: 15px;
+  height: 100vh;
+  width: 100%;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+}
+.wrap {
+  height: 80%;
+  width: 80%;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-top {
+  padding-top: 4rem;
+  height: 50%;
+  width: 100%;
+  min-width: 375px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.info-titulo {
+  height: 60%;
+  width: 400px;
+  min-width: 310px;
+  min-height: 135px;
+  color: var(--Very-Dark-Magenta);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.text {
+  font-size: 18px;
+  color: var(--Dark-Grayish-Magenta);
+  height: 50%;
+  width: 450px;
+  min-width: 310px;
+  line-height: 25px;
+}
+.ranking {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 15px;
+  height: auto;
+  width: 50%;
+}
+.ranking-stats {
+  background-color: var(--Light-Grayish-Magenta);
+  height: 55px;
+  width: 80%;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+.left {
+  align-self: flex-start;
+}
+.center {
+  align-self: center;
+}
+.right {
+  align-self: flex-end;
+}
+.stars {
+  height: auto;
+  width: 40%;
+  display: flex;
+
+  justify-content: center;
+}
+.text-stats {
+  height: auto;
+  width: 60%;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 500;
+}
+.container-bottom {
+  height: 50%;
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  column-gap: 3%;
+}
+.cuadro-descripcion {
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  font-size: 18px;
+  background-color: var(--Very-Dark-Magenta);
+  height: 300px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+.desc {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  width: 60%;
+  line-height: 22px;
+  color: var(--White);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.name-descripcion {
+  min-width: 200px;
+  min-height: 135px;
+  font-size: 18px;
+  color: var(--White);
+  height: 50%;
+  width: 70%;
+  line-height: 25px;
+}
+
+.resaltar {
+  color: var(--Soft-Pink);
+}
+.descripcion-img {
+  border-radius: 50%;
+  height: 50px;
+}
+.top {
+  align-self: flex-start;
+}
+.mid {
+  align-self: center;
+}
+.bot {
+  align-self: flex-end;
+}
+.pie {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    height: auto;
+  }
+  .main-container {
+    justify-content: center;
+  }
+  .wrap {
+    height: 100%;
+    width: 100%;
+    row-gap: 2rem;
+  }
+  .info {
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .info-titulo {
+    font-size: 3rem;
+  }
+  .text {
+    width: 300px;
+  }
+  .ranking {
+    width: 100%;
+  }
+  .container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ranking-stats {
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .stars {
+    column-gap: 8px;
+    width: 100%;
+  }
+  .text-stats {
+    width: 100%;
+  }
+  .left {
+    align-self: center;
+  }
+  .right {
+    align-self: center;
+  }
+  .container-bottom {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    row-gap: 20px;
+  }
+  .cuadro-descripcion {
+    display: flex;
+  }
+  .top {
+    align-self: center;
+  }
+  .bot {
+    align-self: center;
+  }
+}
